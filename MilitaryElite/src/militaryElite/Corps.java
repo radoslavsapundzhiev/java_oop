@@ -1,6 +1,6 @@
 package militaryElite;
 
-public enum Corp {
+public enum Corps {
     Airforces,
     Marines;
 }

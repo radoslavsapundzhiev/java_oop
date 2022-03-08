@@ -1,17 +1,17 @@
 package militaryElite;
 
 public class SpecialisedSoldierImpl extends PrivateImpl{
-    private Corp corp;
-    public SpecialisedSoldierImpl(int id, String firstName, String lastName, double salary, Corp corp) {
+    private Corps corps;
+    public SpecialisedSoldierImpl(int id, String firstName, String lastName, double salary, Corps corps) {
         super(id, firstName, lastName, salary);
-        this.corp = corp;
+        this.corps = corps;
     }
 
-    public Corp getCorp() {
-        return corp;
+    public Corps getCorps() {
+        return corps;
     }
 
-    public void setCorp(Corp corp) {
-        this.corp = corp;
+    public void setCorps(Corps corps) {
+        this.corps = corps;
     }
 }
