@@ -1,0 +1,12 @@
+1. SOLID principles
+	- Uncle Bob:
+		- Clean Code /book/
+		- Clean Architecture /book/
+	- Book for interviews:
+		- Cracking the Code Interview
+2. ctrl + shift + up/down arrow - местене на ред нагоре/надолу в intellij
+3. alt + F8 - calculate intellij
+4. shift + shift - намиране на класове - intellij
+5. ctrl + shift + F - търсене във всички файлове в директорията
+6. BOOK - 
+	Data Structures & Algoritms in Java
