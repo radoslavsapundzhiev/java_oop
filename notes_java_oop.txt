@@ -10,3 +10,4 @@
 5. ctrl + shift + F - търсене във всички файлове в директорията
 6. BOOK - 
 	Data Structures & Algoritms in Java
+7.mpaunov - github - Logger-Exercise
