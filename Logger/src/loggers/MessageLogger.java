@@ -5,7 +5,6 @@ import appenders.ConsoleAppender;
 import appenders.FileAppender;
 import enums.ReportLevel;
 
-import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
@@ -17,41 +16,37 @@ public class MessageLogger implements Logger{
     }
 
     @Override
-    public void logInfo(String dateTime, String message) throws IOException {
+    public void logInfo(String dateTime, String message) {
         log(ReportLevel.INFO.name(), dateTime, message);
     }
 
     @Override
-    public void logWarning(String dateTime, String message) throws IOException {
+    public void logWarning(String dateTime, String message) {
         log(ReportLevel.WARNING.name(), dateTime, message);
     }
 
     @Override
-    public void logError(String dateTime, String message) throws IOException {
+    public void logError(String dateTime, String message) {
         log(ReportLevel.ERROR.name(), dateTime, message);
     }
 
     @Override
-    public void logCritical(String dateTime, String message) throws IOException {
+    public void logCritical(String dateTime, String message) {
         log(ReportLevel.CRITICAL.name(), dateTime, message);
     }
 
     @Override
-    public void logFatal(String dateTime, String message) throws IOException {
+    public void logFatal(String dateTime, String message) {
         log(ReportLevel.FATAL.name(), dateTime, message);
     }
 
-    private void log(String level, String dateTime, String message) throws IOException {
+    private void log(String level, String dateTime, String message)  {
         for (Appender appender: this.appenders) {
             if(ReportLevel.valueOf(level).ordinal() >= appender.getReportLevel().ordinal()) {
                 appender.append(dateTime, level, message);
                 appender.setMessagesCount(appender.getMessagesCount() + 1);
             }
         }
-    }
-
-    public List<Appender> getAppenders() {
-        return appenders;
     }
 
     @Override

@@ -8,7 +8,7 @@ import java.io.IOException;
 public interface Appender {
     ReportLevel getReportLevel();
     void setReportLevel(ReportLevel reportLevel);
-    void append(String dateTime, String reportLevel, String message) throws IOException;
+    void append(String dateTime, String reportLevel, String message);
     Layout getLayout();
     void setLayout(Layout layout);
     int getMessagesCount();

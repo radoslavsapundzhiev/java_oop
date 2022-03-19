@@ -11,5 +11,4 @@ public interface Logger {
     void logError(String dateTime, String message) throws IOException;
     void logCritical(String dateTime, String message) throws IOException;
     void logFatal(String dateTime, String message) throws IOException;
-    List<Appender> getAppenders();
 }
