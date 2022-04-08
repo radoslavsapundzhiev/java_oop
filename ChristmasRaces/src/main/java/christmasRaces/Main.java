@@ -13,9 +13,6 @@ import christmasRaces.repositories.DriverRepository;
 import christmasRaces.repositories.RaceRepository;
 import christmasRaces.repositories.interfaces.Repository;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
 
 public class Main {
     public static void main(String[] args) {
@@ -30,6 +27,4 @@ public class Main {
         EngineImpl engine = new EngineImpl(reader, writer, controller);
         engine.run();
     }
-
-
 }
